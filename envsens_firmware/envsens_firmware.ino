@@ -1,3 +1,12 @@
+/*
+ * Firmware written for NodeMCU AMica + HTU21D.
+ * Solder sensor to GND, 3v3, D1 and D2, should be straightforward
+ * 
+ * Tested with Sparkfuns own HTU21D library version 1.1.3 in the Arduino IDE
+ * 
+ * Made by Bangedaon/Arjan Vreugdenhil
+ */
+
 #include <SparkFunHTU21D.h>
 #include <Wire.h>
 HTU21D myHumidity;
