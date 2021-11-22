@@ -9,6 +9,7 @@
 
 #include <SparkFunHTU21D.h>
 #include <Wire.h>
+#include <ESP8266WiFi.h>
 HTU21D myHumidity;
 
 float last_humidity = 0;
@@ -16,6 +17,8 @@ float last_temperature = 0;
 bool values_read = false;
 
 void setup() {
+  WiFi.softAPdisconnect(false);
+  WiFi.enableAP(false);
   Serial.begin(9600);
   myHumidity.begin();
 }
